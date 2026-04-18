@@ -1,9 +1,5 @@
 import type { Metadata } from 'next'
-<<<<<<< HEAD
 import '@/styles/global.css'
-=======
-import './globals.css'
->>>>>>> b9f5448 (Page Layouting 1)
 
 export const metadata: Metadata = {
   title: 'Airel Adrivano',
