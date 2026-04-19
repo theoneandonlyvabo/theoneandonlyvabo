@@ -1,76 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@300;400&display=swap');
 @import "tailwindcss";
 
 :root {
-  --black: #070709;
-  --deep: #0a0a0e;
-  --surface: #101018;
-  --surface-2: #16161f;
-  --surface-3: #1c1c28;
-  --border: rgba(255,255,255,0.06);
-  --border-hover: rgba(255,255,255,0.12);
+  --black:     #06060a;
+  --deep:      #09090f;
+  --surface:   #0f0f18;
+  --surface-2: #141420;
+  --surface-3: #1a1a28;
 
-  --blue: #4060d0;
-  --blue-bright: #5070e0;
-  --blue-dim: rgba(64,96,208,0.15);
-  --blue-glow: rgba(64,96,208,0.08);
-  --blue-glass: rgba(64,96,208,0.06);
+  --border:       rgba(255,255,255,0.06);
+  --border-mid:   rgba(255,255,255,0.10);
+  --border-hi:    rgba(255,255,255,0.16);
 
-  --white: #f0f0f4;
-  --gray-1: #9090a0;
-  --gray-2: #484858;
-  --gray-3: #1e1e2a;
+  /* Primary — cobalt blue */
+  --blue:      #4060d0;
+  --blue-hi:   #5878e8;
+  --blue-dim:  rgba(64,96,208,0.14);
+  --blue-glow: rgba(64,96,208,0.07);
 
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  /* Dimension accents — used very sparingly */
+  --violet:    rgba(100,70,200,0.55);   /* section backgrounds only */
+  --teal:      rgba(40,160,160,0.7);    /* single highlights */
+  --cream:     #f0ede8;                 /* warm text on dark */
+
+  --white:  #efefef;
+  --gray-1: #8888a0;
+  --gray-2: #44445a;
+  --gray-3: #1c1c2c;
+
+  --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
 html { scroll-behavior: smooth; background: var(--black); }
+
 body {
   background: var(--black);
   color: var(--white);
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-weight: 300;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-::selection { background: var(--blue); color: var(--white); }
+::selection { background: var(--blue); color: #fff; }
+
 ::-webkit-scrollbar { width: 2px; }
 ::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--gray-2); }
+::-webkit-scrollbar-thumb { background: var(--gray-2); border-radius: 2px; }
 
+/* ── Animations ── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
-@keyframes float1 {
-  0%, 100% { transform: translate(0px, 0px) scale(1); }
-  33% { transform: translate(30px, -20px) scale(1.05); }
-  66% { transform: translate(-20px, 15px) scale(0.95); }
+@keyframes blobA {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%     { transform: translate(40px,-30px) scale(1.08); }
+  66%     { transform: translate(-28px,22px) scale(0.94); }
 }
-@keyframes float2 {
-  0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
-  50% { transform: translate(-25px, 20px) rotate(180deg); }
+@keyframes blobB {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(-35px,28px) scale(1.06); }
 }
-@keyframes float3 {
-  0%, 100% { transform: translate(0px, 0px) scale(1); }
-  50% { transform: translate(20px, -30px) scale(1.1); }
+@keyframes blobC {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(22px,-36px) scale(1.1); }
 }
-@keyframes spinSlow {
+@keyframes spinRing {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to   { transform: rotate(360deg); }
 }
 @keyframes pulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.7; }
+  0%,100% { opacity: 0.35; }
+  50%     { opacity: 0.8; }
+}
+@keyframes stripFloat {
+  0%,100% { transform: translateY(0px); }
+  50%     { transform: translateY(-8px); }
 }
 
-.fade-up { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) forwards; }
-.fade-in { animation: fadeIn 0.7s ease forwards; }
+.fade-up { animation: fadeUp 1s cubic-bezier(0.16,1,0.3,1) forwards; }
+.fade-in { animation: fadeIn 0.8s ease forwards; }
