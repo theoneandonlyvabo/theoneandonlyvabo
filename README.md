@@ -25,9 +25,13 @@ Right now, I’m on the grind building **personal and freelance projects**, shar
 ---
 
 ## 🛠️ Tech Stack
+<img src="https://skillicons.dev/icons?i=java,go,js,ts,react,laravel,mysql,postgres,mongodb,git,github" />
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,go,js,ts,react,laravel,mysql,postgres,mongodb,git,github" />
+## 🤖 AI / Workflow Tools
+<p>
+  <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/anthropic.svg" width="40" />
+  <img src="https://ollama.ai/public/ollama.png" width="40" />
+  <img src="https://avatars.githubusercontent.com/u/171259483?s=200&v=4" width="40" />
 </p>
 
 ---
