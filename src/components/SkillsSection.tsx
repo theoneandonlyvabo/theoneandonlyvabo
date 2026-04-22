@@ -113,7 +113,7 @@ export default function SkillsSection() {
 
       <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
         
-        <div style={{ marginBottom: '100px', textAlign: 'center' }}>
+        <div style={{ marginBottom: '70px', textAlign: 'center' }}>
           <div style={{
             fontFamily: 'var(--font-mono)',
             fontSize: '10px',
