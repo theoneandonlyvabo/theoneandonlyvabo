@@ -220,7 +220,7 @@ export default function Hero() {
             onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
             onMouseLeave={e => e.currentTarget.style.opacity = '1'}
           >
-            View work →
+            My creations →
           </a>
           <a
             href="#contact"
@@ -246,7 +246,7 @@ export default function Hero() {
               e.currentTarget.style.background = 'rgba(255,255,255,0.03)'
             }}
           >
-            Get in touch
+            Connect with me
           </a>
         </div>
 
