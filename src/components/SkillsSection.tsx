@@ -20,6 +20,31 @@ export default function SkillsSection() {
     return () => visibilityObserver.disconnect()
   }, [])
 
+  function hashString(str: string) {
+  let hash = 0
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i)
+    hash |= 0
+  }
+  return Math.abs(hash)
+}
+
+function getAnimParams(id: string) {
+  let seed = hashString(id)
+
+  const rand = () => {
+    seed = (seed * 1664525 + 1013904223) % 4294967296
+    return seed / 4294967296
+  }
+
+  return {
+    floatDuration: 4.5 + rand() * 1.5,
+    floatDelay: rand() * 1.5,
+    breathDuration: 2.5 + rand() * 2,
+    breathDelay: rand() * 2,
+  }
+}
+
   // Fungsi buat nentuin prefix, teks highlight, dan suffix berdasarkan ID
   const getDynamicTitle = (skillId: string | null) => {
     if (!skillId) {
@@ -29,7 +54,7 @@ export default function SkillsSection() {
     const idLower = skillId.toLowerCase()
 
     // Systems
-    if (['java', 'go', 'springboot'].includes(idLower)) {
+    if (['java', 'go'].includes(idLower)) {
       return { prefixText: 'What I Build ', highlightText: 'Systems', suffixText: ' With' }
     }
     // Scripts
@@ -85,18 +110,22 @@ export default function SkillsSection() {
         {`
           @keyframes floatAsymmetric {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-15px) rotate(2deg); }
+            50% { transform: translateY(-10px) rotate(1.5deg); }
           }
           
           /* Animasi breathing dibikin subtle biar ngga clashing atau clutter */
           @keyframes neonBreathing {
             0%, 100% { 
-              box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 2px var(--skillColor); 
+              box-shadow: 
+                0 10px 30px rgba(0,0,0,0.4),
+                0 0 10px var(--skillColor);
               filter: brightness(0.98); 
             }
             50% { 
-              box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 6px var(--skillColor); 
-              filter: brightness(1.02); 
+              box-shadow: 
+                0 10px 30px rgba(0,0,0,0.5),
+                0 0 22px var(--skillColor);
+              filter: brightness(1.05); 
             }
           }
 
@@ -163,6 +192,7 @@ export default function SkillsSection() {
           }}
         >
           {SKILLS_DETAILED.map((skillItem, index) => {
+            const anim = getAnimParams(skillItem.id)
             const currentSkillIdLower = skillItem.id.toLowerCase()
             const isSkillHovered = hoveredSkillId === skillItem.id
             const isAnotherSkillHovered = hoveredSkillId !== null && !isSkillHovered
@@ -171,8 +201,10 @@ export default function SkillsSection() {
             const skillColor = currentSkillIdLower === 'openclaw' ? '#EF4444' : skillItem.color
 
             const breathAnimation = isIdleState
-              ? `neonBreathing ${3 + (index % 3)}s ease-in-out infinite ${index * 0.5}s`
+              ? `neonBreathing ${anim.breathDuration}s ease-in-out infinite`
               : 'none'
+
+            const breathDelay = isIdleState ? `${anim.breathDelay}s` : '0s'
 
             const isFigma = currentSkillIdLower === 'figma'
             const idleScale = isFigma ? 'scale(0.75)' : 'scale(1)'
@@ -197,7 +229,8 @@ export default function SkillsSection() {
                   width: '120px',
                   height: '120px',
                   transform: `translateY(${skillItem.offsetY}px)`,
-                  animation: `floatAsymmetric ${4 + (index % 3)}s ease-in-out infinite`,
+                  animation: `floatAsymmetric ${anim.floatDuration}s ease-in-out infinite`,
+                  animationDelay: breathDelay,
                   zIndex: isSkillHovered ? 50 : 1,
                   opacity: isAnotherSkillHovered ? 0.3 : 1,
                   transition: 'opacity 0.4s ease',
@@ -218,8 +251,8 @@ export default function SkillsSection() {
                       background: '#111111',
                       border: `2px solid ${skillColor}`,
                       boxShadow: isSkillHovered
-                        ? `0 20px 40px rgba(0,0,0,0.9), 0 0 40px ${skillColor}40`
-                        : `0 4px 12px rgba(0,0,0,0.5), 0 0 20px ${skillColor}18`,
+                        ? `0 20px 40px rgba(0,0,0,0.9), 0 0 40px ${skillColor}40` // Glow Opacity
+                        : `0 4px 12px rgba(0,0,0,0.5), 0 0 25px ${skillColor}20`, // Glow Opacity
                       display: 'flex',
                       flexDirection: isSkillHovered ? 'column' : 'row',
                       alignItems: 'center',
