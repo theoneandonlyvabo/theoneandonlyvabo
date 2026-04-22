@@ -139,7 +139,7 @@ export default function AboutAndJourneySection() {
         padding: '0 56px',
         position: 'relative', 
         zIndex: 2, 
-        marginBottom: '120px' 
+        marginBottom: '70px' 
       }}>
         
         {/* Title */}
@@ -157,7 +157,7 @@ export default function AboutAndJourneySection() {
             lineHeight: 1.0, color: '#FFFFFF',
             letterSpacing: '-0.03em',
           }}>
-            The Architect & Journey
+            The Journey
           </h2>
         </div>
 
