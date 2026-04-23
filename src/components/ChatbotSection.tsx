@@ -6,7 +6,7 @@ import type { ChatMessage } from '@/lib/types'
 
 const PROMPTS = [
   'What drives you to build?',
-  'Tell me about EternaFall.',
+  'Tell me about ETERNAFALL.',
   'How do you approach architecture?',
   'Where are you headed?',
 ]
