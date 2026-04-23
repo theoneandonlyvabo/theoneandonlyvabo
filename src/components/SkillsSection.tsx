@@ -251,8 +251,8 @@ function getAnimParams(id: string) {
                       background: '#111111',
                       border: `2px solid ${skillColor}`,
                       boxShadow: isSkillHovered
-                        ? `0 20px 40px rgba(0,0,0,0.9), 0 0 40px ${skillColor}10` // Glow Opacity
-                        : `0 4px 12px rgba(0,0,0,0.5), 0 0 12px ${skillColor}5`, // Glow Opacity
+                        ? `0 20px 40px rgba(0,0,0,0.9), 0 0 18px ${skillColor}1A` // Glow Opacity
+                        : `0 4px 12px rgba(0,0,0,0.5), 0 0 10px ${skillColor}0D`, // Glow Opacity
                       display: 'flex',
                       flexDirection: isSkillHovered ? 'column' : 'row',
                       alignItems: 'center',
