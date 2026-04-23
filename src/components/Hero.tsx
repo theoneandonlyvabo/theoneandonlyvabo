@@ -25,7 +25,7 @@ function RoleCapsule() {
         setPhase('in')
       }, 400)
       return () => clearTimeout(swap)
-    }, 2400)
+    }, 1800)
     return () => clearTimeout(hold)
   }, [index])
 
@@ -194,7 +194,7 @@ export default function Hero() {
             marginBottom: '40px',
           }}
         >
-          I build things end-to-end and adapt quickly, thinking by the big picture, and paying attention where it actually matters.
+          Architecting products from zero to one. End-to-end execution with a founder’s eye for value.
         </p>
 
         {/* CTAs */}

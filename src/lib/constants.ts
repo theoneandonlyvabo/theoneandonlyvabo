@@ -115,6 +115,17 @@ export const SKILLS_DETAILED: Skill[] = [
     imagePath: "/icons/javascript.png",
   },
   {
+    id: "php",
+    label: "PHP",
+    category: "Language",
+    color: "#777BB4",
+    description:
+      "Server-side scripting used in the Laravel ecosystem. Applied in Moneytor for backend logic, routing, and database integration.",
+    related: ["Laravel", "MySQL"],
+    offsetY: 30,
+    imagePath: "/icons/php.png",
+  },
+  {
     id: "java",
     label: "Java",
     category: "Language",
@@ -135,17 +146,6 @@ export const SKILLS_DETAILED: Skill[] = [
     related: ["CLI", "TUI", "Concurrency", "Bubbletea"],
     offsetY: -20,
     imagePath: "/icons/golang.png",
-  },
-  {
-    id: "php",
-    label: "PHP",
-    category: "Language",
-    color: "#777BB4",
-    description:
-      "Server-side scripting used in the Laravel ecosystem. Applied in Moneytor for backend logic, routing, and database integration.",
-    related: ["Laravel", "MySQL"],
-    offsetY: 30,
-    imagePath: "/icons/php.png",
   },
   {
     id: "python",
