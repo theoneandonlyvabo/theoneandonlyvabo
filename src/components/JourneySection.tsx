@@ -193,7 +193,7 @@ export default function AboutAndJourneySection() {
               textAlign: 'justify', 
               letterSpacing: '0.01em',
             }}>
-              That mindset pushed me into software engineering and product development. I’m drawn to the process of turning nothing into something real, something structured, something usable. Most of my work right now is in web development because it gives me speed and flexibility to grow, but my real focus leans deeper into backend systems, architecture, and how things actually work under the surface, especially through Java and Go in side projects and collaborations.
+              That brought me into software engineering and product development. I'm drawn to turning nothing into something structured and usable. Most of my work is in web development, but my real interest runs deeper : backend systems, architecture, and how things work under the surface, mostly through Java and Go.
             </p>
             <p style={{
               fontFamily: 'var(--font-sans)', 
@@ -204,7 +204,7 @@ export default function AboutAndJourneySection() {
               textAlign: 'justify', 
               letterSpacing: '0.01em',
             }}>
-              At the core, I don’t complicate what I do. I build, I learn, I refine. Every decision comes back to one principle: create and impact the world. As a famous saying went: "If You wanna make history, You gotta call Your own shots."
+              At the core, I build, I learn, I refine. One principle drives everything: create and impact the world. As a famous saying went: "If You wanna make history, You gotta call Your own shots."
             </p>
           </div>
 
