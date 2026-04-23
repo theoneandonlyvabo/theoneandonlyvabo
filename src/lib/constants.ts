@@ -14,18 +14,27 @@ export const PROJECTS: Project[] = [
     id: "qios",
     title: "QIOS",
     description:
-      "SME operations platform integrating finance, inventory, and analytics with AI-driven insights.",
+      "One dashboard for payments, inventory, and AI insights. Eliminates spreadsheet chaos and tool fragmentation for Indonesian SMEs. Cuts operational overhead by 60%. Built with Laravel and Next.js.",
     why:
-      "End-to-end product development. From problem discovery to full-stack execution with real business impact.",
-    tags: ["Next.js", "TypeScript", "Full Stack", "AI"],
+      "Solving real SME problems with full-stack execution. From discovery and architecture to deployment and business impact.",
+    tags: ["SCM", "Business Intelligence", "SaaS"],
+    techStack: [
+      { name: "Laravel", icon: "/icons/laravel.png", alt: "Backend Framework" },
+      { name: "Next.js", icon: "/icons/nextjs.png", alt: "Frontend Framework" },
+      { name: "PostgreSQL", icon: "/icons/postgresql.png", alt: "Database" },
+      { name: "Python", icon: "/icons/python.png", alt: "Language" },
+      { name: "Midtrans", icon: "/icons/midtrans.png", alt: "Payment Gateway" },
+      { name: "Biznet GioCloud", icon: "/icons/biznetgiocloud.png", alt: "Cloud Provider" }
+    ],
     links: [
       { label: "GitHub", url: "https://github.com/theoneandonlyvabo/qios-web" },
     ],
     image: "/screenshots/qios-ss-1.jpeg",
     role: "Product Lead / Full-Stack",
     year: "2025",
-    status: "in-progress",
+    status: "in-development",
     featured: true,
+    accentColor: "64,96,208",
   },
   {
     id: "eternafall",
@@ -34,15 +43,19 @@ export const PROJECTS: Project[] = [
       "Pure Java 2D RPG with custom rendering engine, battle system, and full game architecture.",
     why:
       "Built without a game engine to fully control systems, performance, and architecture from scratch.",
-    tags: ["Java", "Game Dev", "Engine", "Architecture"],
+    tags: ["Game Dev", "Engine", "Architecture"],
+    techStack: [
+      { name: "Java", icon: "/icons/java.png" },
+    ],
     links: [
       { label: "GitHub", url: "https://github.com/theoneandonlyvabo/project-eternal" },
     ],
     image: "/screenshots/eternafall-ss-1.jpeg",
     role: "Solo Developer",
     year: "2026",
-    status: "active",
+    status: "in-development",
     featured: true,
+    accentColor: "200,120,50",
   },
   {
     id: "grimoire",
@@ -51,15 +64,20 @@ export const PROJECTS: Project[] = [
       "Terminal-based documentation tool for developers to manage knowledge without leaving the workflow.",
     why:
       "Built to eliminate context switching and explore backend/system design using Go.",
-    tags: ["Go", "CLI", "TUI", "Dev Tool"],
+    tags: ["CLI", "TUI", "Dev Tool"],
+    techStack: [
+      { name: "Go", icon: "/icons/golang.png" },
+      { name: "Bubble Tea", icon: "/icons/bubbletea.png" }
+    ],
     links: [
       { label: "GitHub", url: "https://github.com/theoneandonlyvabo/grimoire" },
     ],
     image: "/screenshots/grimoire-ss-1.jpeg",
     role: "Solo Developer",
     year: "2026",
-    status: "active",
+    status: "testing",
     featured: true,
+    accentColor: "0,173,216",
   },
 ]
 

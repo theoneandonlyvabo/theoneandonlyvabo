@@ -9,12 +9,14 @@ export type Project = {
   description: string
   why: string
   tags: string[]
+  techStack: { name: string; icon: string; alt?: string }[]
   links: { label: string; url: string }[]
   image?: string
   role: string
   year: string
-  status: "active" | "in-progress" | "archived"
+  status: "in-development" | "testing" | "live"
   featured: boolean
+  accentColor: string
 }
 
 export type SkillCategory = {

@@ -54,7 +54,7 @@ export default function ChatbotSection() {
       id="contact"
       ref={ref}
       style={{
-        background: 'var(--deep)',
+        background: '#06060a',
         padding: '120px 56px',
         position: 'relative',
         overflow: 'hidden',
@@ -74,7 +74,7 @@ export default function ChatbotSection() {
         pointerEvents: 'none',
       }} />
 
-      <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
+      <div style={{ maxWidth: '1140px', margin: '0 auto', position: 'relative' }}>
         <div style={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
@@ -90,22 +90,22 @@ export default function ChatbotSection() {
             <div>
               <div style={{
                 fontFamily: 'var(--font-mono)', fontSize: '10px',
-                letterSpacing: '0.25em', color: 'var(--blue)', marginBottom: '10px',
+                letterSpacing: '0.25em', color: '#888888', marginBottom: '16px',
               }}>
                 05 / CONTACT
               </div>
               <h2 style={{
                 fontFamily: 'var(--font-sans)', fontWeight: 600,
                 fontSize: 'clamp(36px, 5vw, 60px)',
-                lineHeight: 1.0, color: 'var(--white)',
+                lineHeight: 1.0, color: '#FFFFFF',
                 letterSpacing: '-0.03em', marginBottom: '20px',
               }}>
                 Let's talk
               </h2>
               <p style={{
                 fontFamily: 'var(--font-sans)', fontWeight: 300,
-                fontSize: '13px', color: 'var(--gray-1)',
-                lineHeight: 1.8, maxWidth: '340px',
+                fontSize: '15px', color: 'rgba(255,255,255,0.55)',
+                lineHeight: 1.85, maxWidth: '340px',
               }}>
                 You're not talking to a support bot.
                 This is a fragment of how I think.
@@ -116,9 +116,10 @@ export default function ChatbotSection() {
             {/* Links */}
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               {[
-                { label: 'GitHub', value: 'theoneandonlyvabo', url: 'https://github.com/theoneandonlyvabo' },
-                { label: 'LinkedIn', value: 'aireladrivano', url: 'https://linkedin.com/in/aireladrivano' },
-                { label: 'Email', value: 'aireladrivano196@gmail.com', url: 'mailto:aireladrivano196@gmail.com' },
+                { label: 'GitHub', value: 'theoneandonlyvabo', url: 'https://github.com/theoneandonlyvabo', icon: '/icons/github.png' },
+                { label: 'LinkedIn', value: 'Airel Adrivano', url: 'https://linkedin.com/in/aireladrivano', icon: '/icons/linkedin.png' },
+                { label: 'Instagram', value: 'aireladrivano', url: 'https://instagram.com/aireladrivano', icon: '/icons/instagram.png' },
+                { label: 'Email', value: 'aireladrivano196@gmail.com', url: 'mailto:aireladrivano196@gmail.com', icon: '/icons/gmail.png' },
               ].map((link) => (
                 <a
                   key={link.label}
@@ -129,23 +130,38 @@ export default function ChatbotSection() {
                     display: 'flex', alignItems: 'center',
                     justifyContent: 'space-between',
                     padding: '14px 0',
-                    borderBottom: '1px solid var(--border)',
+                    borderBottom: '1px solid rgba(255,255,255,0.06)',
                     textDecoration: 'none',
                     transition: 'padding-left 0.2s',
                   }}
                   onMouseEnter={e => e.currentTarget.style.paddingLeft = '6px'}
                   onMouseLeave={e => e.currentTarget.style.paddingLeft = '0px'}
                 >
-                  <span style={{
-                    fontFamily: 'var(--font-mono)', fontSize: '10px',
-                    letterSpacing: '0.12em', color: 'var(--gray-2)',
-                    textTransform: 'uppercase',
-                  }}>
-                    {link.label}
-                  </span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {link.icon && (
+                      <img
+                        src={link.icon}
+                        alt={link.label}
+                        style={{
+                          width: '14px',
+                          height: '14px',
+                          objectFit: 'contain',
+                          filter: ['LinkedIn', 'Instagram', 'Email'].includes(link.label) ? 'none' : 'invert(1) brightness(1.5)',
+                          opacity: 0.5,
+                        }}
+                      />
+                    )}
+                    <span style={{
+                      fontFamily: 'var(--font-mono)', fontSize: '10px',
+                      letterSpacing: '0.12em', color: '#888888',
+                      textTransform: 'uppercase',
+                    }}>
+                      {link.label}
+                    </span>
+                  </div>
                   <span style={{
                     fontFamily: 'var(--font-sans)', fontWeight: 300,
-                    fontSize: '12px', color: 'var(--gray-1)',
+                    fontSize: '12px', color: 'rgba(255,255,255,0.75)',
                   }}>
                     {link.value}
                   </span>
@@ -156,8 +172,8 @@ export default function ChatbotSection() {
 
           {/* Right: Chat */}
           <div style={{
-            border: '1px solid var(--border)',
-            borderRadius: '12px',
+            border: '1px solid rgba(255,255,255,0.06)',
+            borderRadius: '16px',
             background: 'rgba(255,255,255,0.02)',
             backdropFilter: 'blur(20px)',
             display: 'flex',
@@ -170,24 +186,24 @@ export default function ChatbotSection() {
               display: 'flex', alignItems: 'center',
               justifyContent: 'space-between',
               padding: '14px 20px',
-              borderBottom: '1px solid var(--border)',
+              borderBottom: '1px solid rgba(255,255,255,0.06)',
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <div style={{
                   width: '6px', height: '6px', borderRadius: '50%',
-                  background: 'var(--blue)',
+                  background: '#4060d0',
                   animation: 'pulse 2.5s ease-in-out infinite',
                 }} />
                 <span style={{
                   fontFamily: 'var(--font-sans)', fontWeight: 400,
-                  fontSize: '12px', color: 'var(--gray-1)',
+                  fontSize: '12px', color: 'rgba(255,255,255,0.6)',
                 }}>
                   vano, but dumber
                 </span>
               </div>
               <span style={{
                 fontFamily: 'var(--font-mono)', fontSize: '9px',
-                letterSpacing: '0.1em', color: 'var(--gray-2)',
+                letterSpacing: '0.1em', color: '#888888',
               }}>
                 llama 3.1
               </span>
@@ -203,7 +219,7 @@ export default function ChatbotSection() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <p style={{
                     fontFamily: 'var(--font-sans)', fontWeight: 300,
-                    fontSize: '12px', color: 'var(--gray-2)', lineHeight: 1.6,
+                    fontSize: '12px', color: '#888888', lineHeight: 1.6,
                   }}>
                     You're in. Ask anything.
                   </p>
@@ -215,9 +231,9 @@ export default function ChatbotSection() {
                         style={{
                           textAlign: 'left',
                           fontFamily: 'var(--font-sans)', fontWeight: 300,
-                          fontSize: '12px', color: 'var(--gray-2)',
+                          fontSize: '12px', color: '#888888',
                           padding: '8px 12px',
-                          border: '1px solid var(--border)',
+                          border: '1px solid rgba(255,255,255,0.06)',
                           borderRadius: '8px',
                           background: 'transparent',
                           cursor: 'pointer',
@@ -225,12 +241,12 @@ export default function ChatbotSection() {
                         }}
                         onMouseEnter={e => {
                           e.currentTarget.style.borderColor = 'rgba(64,96,208,0.3)'
-                          e.currentTarget.style.color = 'var(--white)'
+                          e.currentTarget.style.color = '#FFFFFF'
                           e.currentTarget.style.background = 'rgba(64,96,208,0.04)'
                         }}
                         onMouseLeave={e => {
-                          e.currentTarget.style.borderColor = 'var(--border)'
-                          e.currentTarget.style.color = 'var(--gray-2)'
+                          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
+                          e.currentTarget.style.color = '#888888'
                           e.currentTarget.style.background = 'transparent'
                         }}
                       >
@@ -250,7 +266,7 @@ export default function ChatbotSection() {
                   <span style={{
                     fontFamily: 'var(--font-mono)', fontSize: '9px',
                     letterSpacing: '0.12em',
-                    color: msg.role === 'user' ? 'var(--blue)' : 'var(--gray-2)',
+                    color: msg.role === 'user' ? '#4060d0' : '#888888',
                     textTransform: 'uppercase',
                   }}>
                     {msg.role === 'user' ? 'You' : 'Airel'}
@@ -264,9 +280,9 @@ export default function ChatbotSection() {
                       : 'rgba(255,255,255,0.03)',
                     border: `1px solid ${msg.role === 'user'
                       ? 'rgba(64,96,208,0.15)'
-                      : 'var(--border)'}`,
+                      : 'rgba(255,255,255,0.06)'}`,
                     fontFamily: 'var(--font-sans)', fontWeight: 300,
-                    fontSize: '12px', color: 'var(--white)',
+                    fontSize: '12px', color: '#efefef',
                     lineHeight: 1.7,
                   }}>
                     {msg.content}
@@ -279,7 +295,7 @@ export default function ChatbotSection() {
                   {[0, 1, 2].map((i) => (
                     <div key={i} style={{
                       width: '4px', height: '4px', borderRadius: '50%',
-                      background: 'var(--blue)',
+                      background: '#4060d0',
                       animation: `pulse 1.2s ${i * 0.2}s ease-in-out infinite`,
                     }} />
                   ))}
@@ -292,11 +308,11 @@ export default function ChatbotSection() {
             <div style={{
               display: 'flex', alignItems: 'center', gap: '10px',
               padding: '12px 16px',
-              borderTop: '1px solid var(--border)',
+              borderTop: '1px solid rgba(255,255,255,0.06)',
             }}>
               <span style={{
                 fontFamily: 'var(--font-mono)', fontSize: '12px',
-                color: 'var(--blue)', flexShrink: 0,
+                color: '#4060d0', flexShrink: 0,
               }}>
                 &gt;
               </span>
@@ -310,8 +326,8 @@ export default function ChatbotSection() {
                   flex: 1,
                   background: 'transparent', border: 'none', outline: 'none',
                   fontFamily: 'var(--font-sans)', fontWeight: 300,
-                  fontSize: '13px', color: 'var(--white)',
-                  caretColor: 'var(--blue)',
+                  fontSize: '13px', color: '#efefef',
+                  caretColor: '#4060d0',
                 }}
               />
               <button
@@ -319,7 +335,7 @@ export default function ChatbotSection() {
                 disabled={loading || !input.trim()}
                 style={{
                   fontFamily: 'var(--font-mono)', fontSize: '10px',
-                  letterSpacing: '0.1em', color: 'var(--blue)',
+                  letterSpacing: '0.1em', color: '#4060d0',
                   background: 'none', border: 'none', cursor: 'pointer',
                   opacity: loading || !input.trim() ? 0.3 : 1,
                   transition: 'opacity 0.2s', flexShrink: 0,

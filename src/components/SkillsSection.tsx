@@ -100,7 +100,7 @@ function getAnimParams(id: string) {
       ref={sectionRef}
       style={{
         background: '#000000',
-        padding: '0px 50px',
+        padding: '0px 56px',
         position: 'relative',
         overflow: 'hidden',
         minHeight: '80vh',
@@ -140,7 +140,7 @@ function getAnimParams(id: string) {
         `}
       </style>
 
-      <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
+      <div style={{ maxWidth: '1140px', margin: '0 auto', position: 'relative' }}>
         
         <div style={{ marginBottom: '70px', textAlign: 'center' }}>
           <div style={{
