@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useEffect, useState } from 'react'
-import { sendChatMessage } from '@/lib/gemini'
+import { sendChatMessage } from '@/lib/chatbot'
 import type { ChatMessage } from '@/lib/types'
 
 const PROMPTS = [
@@ -182,14 +182,14 @@ export default function ChatbotSection() {
                   fontFamily: 'var(--font-sans)', fontWeight: 400,
                   fontSize: '12px', color: 'var(--gray-1)',
                 }}>
-                  Airel — fragment
+                  vano, but dumber
                 </span>
               </div>
               <span style={{
                 fontFamily: 'var(--font-mono)', fontSize: '9px',
                 letterSpacing: '0.1em', color: 'var(--gray-2)',
               }}>
-                gemini pro
+                llama 3.1
               </span>
             </div>
 

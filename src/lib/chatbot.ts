@@ -13,7 +13,8 @@ export async function sendChatMessage(
     })
 
     if (!response.ok) {
-      throw new Error(`API error: ${response.statusText}`)
+      const data = await response.json().catch(() => ({}))
+      throw new Error(data.error ?? response.statusText)
     }
 
     const data = await response.json()
@@ -25,10 +26,4 @@ export async function sendChatMessage(
     console.error("Chat error:", error)
     throw error
   }
-}
-
-export const CHAT_CONFIG = {
-  maxMessages: 50, // Keep last 50 messages in history
-  maxRetries: 3,
-  timeout: 30000, // 30 seconds
 }
