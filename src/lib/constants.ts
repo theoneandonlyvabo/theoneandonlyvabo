@@ -117,7 +117,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Language",
     color: "#3178C6",
     description:
-      "Primary language for all web projects. Used across the full stack — Next.js on the frontend, Node/Express on the backend. Chosen for type safety and better DX at scale.",
+      "Primary language for all web projects. Used across the full stack, Next.js on the frontend, Node/Express on the backend. Chosen for type safety and better DX at scale.",
     related: ["React", "Next.js", "Node.js"],
     offsetY: -30,
     imagePath: "/icons/typescript.png",
@@ -150,7 +150,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Language",
     color: "#5382A1",
     description:
-      "Systems and game development language. Used to build ETERNAFALL from scratch — custom rendering pipeline, game loop, battle systems, and entity management. No engine, full control.",
+      "Systems and game development language. Used to build ETERNAFALL from scratch, custom rendering pipeline, game loop, battle systems, and entity management. No engine, full control.",
     related: ["AWT/Canvas", "Game Dev", "OOP"],
     offsetY: 40,
     imagePath: "/icons/java.png",
@@ -161,7 +161,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Language",
     color: "#00ADD8",
     description:
-      "Backend and CLI tooling language. Used to build Grimoire — a terminal-first developer documentation tool. Chosen for simplicity, fast compilation, and first-class concurrency.",
+      "Backend and CLI tooling language. Used to build Grimoire : a terminal-first developer documentation tool. Chosen for simplicity, fast compilation, and first-class concurrency.",
     related: ["Concurrency", "Bubbletea", "Gin"],
     offsetY: -20,
     imagePath: "/icons/golang.png",
@@ -172,7 +172,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Language",
     color: "#3776AB",
     description:
-      "Used for data analysis, scripting, and ML exploration. Applied in research contexts and automation tasks — not a primary production language.",
+      "Used for data analysis, scripting, and ML exploration. Applied in research contexts and automation tasks, not a primary production language.",
     related: ["Analytics", "Automation", "ML"],
     offsetY: -10,
     imagePath: "/icons/python.png",
@@ -183,7 +183,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Frontend & Backend",
     color: "#FFFFFF",
     description:
-      "Primary framework for full-stack web projects. Used in QIOS and this portfolio. App Router, API routes, SSR, and server actions — used in production context.",
+      "Primary framework for full-stack web projects. Used in QIOS and this portfolio. App Router, API routes, SSR, and server actions. Used in production context.",
     related: ["React", "TypeScript", "Vercel"],
     offsetY: 20,
     imagePath: "/icons/nextjs.png",
@@ -205,7 +205,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Backend",
     color: "#45d000",
     description:
-      "Java-based backend framework explored for REST API development. Familiar with its project structure, dependency injection, and MVC pattern — not yet used in a shipped project.",
+      "Java-based backend framework explored for REST API development. Familiar with its project structure, dependency injection, and MVC pattern. Not yet used in a shipped project.",
     related: ["Java", "REST API", "MVC"],
     offsetY: -30,
     imagePath: "/icons/springboot.png",
@@ -250,7 +250,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "Design",
     color: "#F24E1E",
     description:
-      "UI/UX design and prototyping tool. Used for wireframing and component design before development — part of the standard workflow before touching code.",
+      "UI/UX design and prototyping tool. Used for wireframing and component design before development, part of the standard workflow before touching code.",
     related: ["UI/UX", "Design System", "Prototyping"],
     offsetY: -45,
     imagePath: "/icons/figma.png",
@@ -261,7 +261,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "AI",
     color: "#D97757",
     description:
-      "Deep daily use of Anthropic's Claude for development workflow — architecture decisions, code review, debugging, and documentation. Also exploring Claude Code and API integration.",
+      "Deep daily use of Anthropic's Claude for development workflow, architecture decisions, code review, debugging, and documentation. Also exploring Claude Code and API integration.",
     related: ["LLM", "Claude Code", "Anthropic"],
     offsetY: 15,
     imagePath: "/icons/claude.png",
@@ -284,7 +284,7 @@ export const SKILLS_DETAILED: Skill[] = [
     category: "AI / Tools",
     color: "#ff3232",
     description:
-      "Internal experiment exploring LLM orchestration and local AI tooling. Early-stage — direction and scope still being defined.",
+      "Internal experiment exploring LLM orchestration and local AI tooling. Early-stage, direction and scope still being defined.",
     related: ["LLM", "Local AI", "Ollama"],
     offsetY: 10,
     imagePath: "/icons/openclaw.png",

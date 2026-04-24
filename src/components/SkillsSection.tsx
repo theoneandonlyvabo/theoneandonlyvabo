@@ -21,29 +21,29 @@ export default function SkillsSection() {
   }, [])
 
   function hashString(str: string) {
-  let hash = 0
-  for (let i = 0; i < str.length; i++) {
-    hash = (hash << 5) - hash + str.charCodeAt(i)
-    hash |= 0
-  }
-  return Math.abs(hash)
-}
-
-function getAnimParams(id: string) {
-  let seed = hashString(id)
-
-  const rand = () => {
-    seed = (seed * 1664525 + 1013904223) % 4294967296
-    return seed / 4294967296
+    let hash = 0
+    for (let i = 0; i < str.length; i++) {
+      hash = (hash << 5) - hash + str.charCodeAt(i)
+      hash |= 0
+    }
+    return Math.abs(hash)
   }
 
-  return {
-    floatDuration: 4.5 + rand() * 1.5,
-    floatDelay: rand() * 1.5,
-    breathDuration: 2.5 + rand() * 2,
-    breathDelay: rand() * 2,
+  function getAnimParams(id: string) {
+    let seed = hashString(id)
+
+    const rand = () => {
+      seed = (seed * 1664525 + 1013904223) % 4294967296
+      return seed / 4294967296
+    }
+
+    return {
+      floatDuration: 4.5 + rand() * 1.5,
+      floatDelay: rand() * 1.5,
+      breathDuration: 2.5 + rand() * 2,
+      breathDelay: rand() * 2,
+    }
   }
-}
 
   // Fungsi buat nentuin prefix, teks highlight, dan suffix berdasarkan ID
   const getDynamicTitle = (skillId: string | null) => {
@@ -77,7 +77,7 @@ function getAnimParams(id: string) {
     if (['ollama', 'openclaw'].includes(idLower)) {
       return { prefixText: 'What I Experiment ', highlightText: 'Automations', suffixText: ' with' }
     }
-    
+
     // Default untuk bahasa & framework web
     return { prefixText: 'What I Build ', highlightText: 'Web Apps', suffixText: ' With' }
   }
@@ -141,7 +141,7 @@ function getAnimParams(id: string) {
       </style>
 
       <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 56px', position: 'relative' }}>
-        
+
         <div style={{ marginBottom: '72px', textAlign: 'center' }}>
           <div style={{
             fontFamily: 'var(--font-mono)',
@@ -185,7 +185,6 @@ function getAnimParams(id: string) {
             gap: '24px',
             maxWidth: '950px',
             margin: '0 auto',
-            margin: '0 auto',
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? 'translateY(0)' : 'translateY(40px)',
             transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
@@ -216,8 +215,8 @@ function getAnimParams(id: string) {
             const imgFilter = needsInvert && !isSkillHovered
               ? 'invert(1) brightness(1.5)'
               : needsInvert
-              ? 'invert(1)'
-              : 'none'
+                ? 'invert(1)'
+                : 'none'
 
             return (
               <div
@@ -316,10 +315,10 @@ function getAnimParams(id: string) {
                         </div>
                       )}
 
-                      <div style={{ 
-                        display: 'flex', 
-                        gap: '8px', 
-                        marginBottom: '8px', 
+                      <div style={{
+                        display: 'flex',
+                        gap: '8px',
+                        marginBottom: '8px',
                         flexWrap: 'wrap',
                         alignItems: 'center'
                       }}>
