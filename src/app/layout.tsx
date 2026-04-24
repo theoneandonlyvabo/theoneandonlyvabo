@@ -26,12 +26,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.scrollY > 0) {
+                window.scrollTo(0, 0);
+              }
+            `,
+          }}
+        />
         <CustomCursor />
         {children}
       </body>
