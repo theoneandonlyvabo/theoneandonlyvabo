@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useState, useCallback } from 'react'
 
 const ERAS = [
   {
@@ -45,18 +45,22 @@ const ERAS = [
   },
 ]
 
-// 8 Photo configs with varying ratios, placements, and rotations
-// anchored to top & left for a consistent fluid layout
+// Each photo has its own sound file (place MP3s in /public/music/)
+// Placeholder filenames — swap with your actual tracks
 const ORGANIC_PHOTOS = [
-  { id: 1, src: '/photos/3:4 selfie.jpeg',   ratio: '3/4', w: '32%', top: '1%',  left: '4%',  rotate: '-11deg', delay: '0.2s', z: 3 },
-  { id: 6, src: '/photos/4:3 yearbook.jpeg', ratio: '4/3', w: '42%', top: '1%',  left: '42%', rotate: '7deg',   delay: '0.8s', z: 2 },
-  { id: 3, src: '/photos/3:4 share.jpeg',    ratio: '3/4', w: '30%', top: '22%', left: '70%', rotate: '13deg',  delay: '0.5s', z: 4 },
-  { id: 2, src: '/photos/3:4 photo.jpeg',    ratio: '3/4', w: '30%', top: '30%', left: '-1%', rotate: '-15deg', delay: '1.5s', z: 5 },
-  { id: 8, src: '/photos/1:1 mip.jpeg',      ratio: '1/1', w: '36%', top: '26%', left: '31%', rotate: '-2deg',  delay: '0s',   z: 8 },
-  { id: 5, src: '/photos/4:3 og.jpeg',       ratio: '4/3', w: '41%', top: '58%', left: '32%', rotate: '-5deg',  delay: '1.2s', z: 6 },
-  { id: 4, src: '/photos/3:4 2030.jpeg',     ratio: '3/4', w: '29%', top: '58%', left: '70%', rotate: '10deg',  delay: '2.5s', z: 5 },
-  { id: 7, src: '/photos/4:3 basket.jpeg',   ratio: '4/3', w: '42%', top: '64%', left: '2%',  rotate: '-3deg',  delay: '2.1s', z: 5 },
+  { id: 1, src: '/photos/3:4 selfie.jpeg',   sound: '/music/best_friend.mp3', ratio: '3/4', w: '32%', top: '1%',  left: '4%',  rotate: '-11deg', delay: '0.2s', z: 3 },
+  { id: 6, src: '/photos/4:3 yearbook.jpeg', sound: '/music/pilihanku.mp3', ratio: '4/3', w: '42%', top: '1%',  left: '42%', rotate: '7deg',   delay: '0.8s', z: 2 },
+  { id: 3, src: '/photos/3:4 share.jpeg',    sound: '/music/novacane.mp3', ratio: '3/4', w: '30%', top: '22%', left: '70%', rotate: '13deg',  delay: '0.5s', z: 4 },
+  { id: 2, src: '/photos/3:4 photo.jpeg',    sound: '/music/who_knows.mp3', ratio: '3/4', w: '30%', top: '30%', left: '-1%', rotate: '-15deg', delay: '1.5s', z: 5 },
+  { id: 8, src: '/photos/1:1 mip.jpeg',      sound: '/music/adventure_of_a_lifetime.mp3', ratio: '1/1', w: '36%', top: '26%', left: '31%', rotate: '-2deg',  delay: '0s',   z: 8 },
+  { id: 5, src: '/photos/4:3 og.jpeg',       sound: '/music/anything_you_want.mp3', ratio: '4/3', w: '41%', top: '58%', left: '32%', rotate: '-5deg',  delay: '1.2s', z: 6 },
+  { id: 4, src: '/photos/3:4 2030.jpeg',     sound: '/music/sweet_life.mp3', ratio: '3/4', w: '29%', top: '58%', left: '70%', rotate: '10deg',  delay: '2.5s', z: 5 },
+  { id: 7, src: '/photos/4:3 basket.jpeg',   sound: '/music/pony.mp3', ratio: '4/3', w: '42%', top: '64%', left: '2%',  rotate: '-3deg',  delay: '2.1s', z: 5 },
 ]
+
+const FADE_STEP = 0.04   // volume increment per tick
+const FADE_MS   = 30     // ms between ticks → ~750ms full fade
+const TARGET_VOL = 0.55
 
 const cardWidth = 440
 const cardGap = 24
@@ -65,13 +69,102 @@ export default function AboutAndJourneySection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [windowWidth, setWindowWidth] = useState(1280)
   const [floatIndex, setFloatIndex] = useState(0)
+  const [hasInteracted, setHasInteracted] = useState(false)
+
+  // Audio state
+  const audioInstancesRef = useRef<{ [id: number]: HTMLAudioElement }>({})
+  const fadeTimersRef = useRef<{ [id: number]: ReturnType<typeof setInterval> }>({})
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  const clearFadeTimer = useCallback((id: number) => {
+    if (fadeTimersRef.current[id]) {
+      clearInterval(fadeTimersRef.current[id])
+      delete fadeTimersRef.current[id]
+    }
+  }, [])
+
+  const stopAll = useCallback(() => {
+    Object.values(fadeTimersRef.current).forEach(timer => clearInterval(timer))
+    fadeTimersRef.current = {}
+    Object.values(audioInstancesRef.current).forEach(audio => {
+      audio.pause()
+      audio.currentTime = 0
+      audio.volume = 0
+    })
+  }, [])
 
   useEffect(() => {
     setWindowWidth(window.innerWidth)
     const handleResize = () => setWindowWidth(window.innerWidth)
+    const handleInteract = () => setHasInteracted(true)
+
     window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    window.addEventListener('click', handleInteract, { once: true })
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('click', handleInteract)
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current)
+      stopAll()
+    }
+  }, [stopAll])
+
+  const syncAudio = useCallback((targetId: number | null) => {
+    ORGANIC_PHOTOS.forEach(photo => {
+      const isTarget = photo.id === targetId
+
+      let audio = audioInstancesRef.current[photo.id]
+      if (isTarget && !audio) {
+        audio = new Audio(photo.sound)
+        audio.loop = true
+        audio.volume = 0
+        audioInstancesRef.current[photo.id] = audio
+      }
+
+      if (!audio) return
+
+      clearFadeTimer(photo.id)
+
+      if (isTarget) {
+        audio.play().catch(() => {/* autoplay blocked */})
+        fadeTimersRef.current[photo.id] = setInterval(() => {
+          if (audio.volume >= TARGET_VOL - FADE_STEP) {
+            audio.volume = TARGET_VOL
+            clearFadeTimer(photo.id)
+          } else {
+            audio.volume = Math.min(TARGET_VOL, audio.volume + FADE_STEP)
+          }
+        }, FADE_MS)
+      } else {
+        if (!audio.paused || audio.volume > 0) {
+          fadeTimersRef.current[photo.id] = setInterval(() => {
+            if (audio.volume <= FADE_STEP) {
+              audio.pause()
+              audio.currentTime = 0
+              audio.volume = 0
+              clearFadeTimer(photo.id)
+            } else {
+              audio.volume = Math.max(0, audio.volume - FADE_STEP)
+            }
+          }, FADE_MS)
+        }
+      }
+    })
+  }, [clearFadeTimer])
+
+  const handlePhotoEnter = useCallback((photo: typeof ORGANIC_PHOTOS[0]) => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current)
+    hoverTimeoutRef.current = setTimeout(() => {
+      syncAudio(photo.id)
+    }, 150)
+  }, [syncAudio])
+
+  const handlePhotoLeave = useCallback(() => {
+    if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current)
+    hoverTimeoutRef.current = setTimeout(() => {
+      syncAudio(null)
+    }, 150)
+  }, [syncAudio])
 
   const handleHorizontalScroll = () => {
     if (!scrollContainerRef.current) return
@@ -103,13 +196,18 @@ export default function AboutAndJourneySection() {
           100% { background-position: 0% 50%; }
         }
 
-        /* Organic float using CSS Variables for rotation so each photo stays tilted */
         @keyframes organicFloat {
           0%, 100% { transform: translateY(0px) rotate(var(--r)); }
           50%      { transform: translateY(-8px) rotate(calc(var(--r) + 1.5deg)); }
         }
 
-        /* Sleek, dark-mode glassmorphism style matching the cards */
+        .scrapbook-container {
+          flex: 1 1 400px;
+          position: relative;
+          height: 460px;
+          perspective: 1000px;
+        }
+
         .scrapbook-photo {
           position: absolute;
           border: 1px solid rgba(255,255,255,0.06);
@@ -119,29 +217,37 @@ export default function AboutAndJourneySection() {
           background: rgba(10,12,16,0.6);
           backdrop-filter: blur(10px);
           animation: organicFloat 6s ease-in-out infinite;
-          transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                      z-index 0.3s ease, 
-                      box-shadow 0.4s ease, 
-                      border-color 0.4s ease;
+          transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                      filter 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                      opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                      z-index 0.1s ease,
+                      box-shadow 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                      border-color 0.65s ease;
           cursor: pointer;
+          filter: blur(0px) brightness(1);
+          will-change: transform, filter;
         }
 
-        /* Inner subtle glow to match the era cards */
         .scrapbook-photo::after {
-          content: '';
-          position: absolute;
-          inset: 0;
-          border-radius: 16px;
-          box-shadow: inset 0 0 20px rgba(255,255,255,0.03);
-          pointer-events: none;
+          display: none;
+        }
+
+        .scrapbook-container:has(.scrapbook-photo:hover) .scrapbook-photo {
+          animation-play-state: paused;
+        }
+
+        .scrapbook-container:has(.scrapbook-photo:hover) .scrapbook-photo:not(:hover) {
+          filter: blur(0px) brightness(0.25) !important;
+          transform: scale(0.85) rotate(var(--r)) translateZ(-50px) !important;
+          z-index: 1 !important;
         }
 
         .scrapbook-photo:hover {
-          z-index: 20 !important;
-          transform: scale(1.15) rotate(0deg) !important;
-          border-color: rgba(255,255,255,0.25);
-          box-shadow: 0 30px 60px -10px rgba(0,0,0,0.9), 0 0 30px rgba(255,255,255,0.05);
-          animation: none;
+          z-index: 30 !important;
+          transform: scale(1.35) rotate(0deg) translateZ(50px) !important;
+          border-color: rgba(255,255,255,0.15) !important;
+          box-shadow: 0 40px 80px -15px rgba(0,0,0,1) !important;
+          filter: blur(0px) brightness(1.05) contrast(1.05) !important;
         }
 
         .era-card {
@@ -239,17 +345,46 @@ export default function AboutAndJourneySection() {
           </div>
 
           {/* Right: Scrapbook Collage */}
-          <div
-            style={{
-              flex: '1 1 400px',
-              position: 'relative',
-              height: '460px',
-            }}
-          >
+          <div className="scrapbook-container">
+            {/* Hover Indicator */}
+            <div style={{
+              position: 'absolute',
+              top: '-110px',
+              right: '0',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '10px',
+              letterSpacing: '0.1em',
+              color: 'rgba(255,255,255,0.4)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              pointerEvents: 'none',
+              zIndex: 1,
+            }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                {hasInteracted ? (
+                  <>
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                  </>
+                ) : (
+                  <>
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                    <polyline points="10 17 15 12 10 7"></polyline>
+                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                  </>
+                )}
+              </svg>
+              {hasInteracted ? "HOVER ON A PHOTO" : "CLICK ANYWHERE ONCE, THEN HOVER"}
+            </div>
+
             {ORGANIC_PHOTOS.map((photo) => (
               <div
                 key={photo.id}
                 className="scrapbook-photo"
+                onMouseEnter={() => handlePhotoEnter(photo)}
+                onMouseLeave={handlePhotoLeave}
                 style={{
                   width: photo.w,
                   aspectRatio: photo.ratio,
@@ -257,7 +392,7 @@ export default function AboutAndJourneySection() {
                   left: photo.left,
                   zIndex: photo.z,
                   animationDelay: photo.delay,
-                  ...( { '--r': photo.rotate } as React.CSSProperties ),
+                  ...({ '--r': photo.rotate } as React.CSSProperties),
                 }}
               >
                 <img
