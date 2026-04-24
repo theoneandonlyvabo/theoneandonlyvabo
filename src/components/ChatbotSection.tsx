@@ -198,7 +198,7 @@ export default function ChatbotSection() {
                   fontFamily: 'var(--font-sans)', fontWeight: 400,
                   fontSize: '12px', color: 'rgba(255,255,255,0.6)',
                 }}>
-                  vano, but dumber
+                    Image of Vano
                 </span>
               </div>
               <span style={{
