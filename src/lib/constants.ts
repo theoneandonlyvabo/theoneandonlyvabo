@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     tags: ["SaaS", "SCM", "Business Intelligence"],
     techStack: [
       { name: "Next.js", icon: "/icons/nextjs.png", alt: "Frontend Framework" },
-      { name: "Go (Echo)", icon: "/icons/echo.png", alt: "Backend Framework" },
+      { name: "Go", icon: "/icons/go.png", alt: "Backend Framework" },
       { name: "PostgreSQL", icon: "/icons/postgresql.png", alt: "Database" },
       { name: "Midtrans", icon: "/icons/midtrans.png", alt: "Payment Gateway" },
       { name: "JWT", icon: "/icons/jwt.png", alt: "Authentication" },
