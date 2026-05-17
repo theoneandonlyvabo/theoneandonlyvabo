@@ -9,7 +9,7 @@ Outside work: solo Java RPG, Go TUI tools, and whatever I find worth breaking in
 
 ## Stack
 
-<img src="https://skillicons.dev/icons?i=java,go,js,ts,php,next,laravel,postgres,mysql,mongodb,docker,git,github" />
+<img src="https://skillicons.dev/icons?i=go,ts,java,next,laravel,postgres,docker,git,github" />
 
 ---
 
@@ -18,7 +18,7 @@ Outside work: solo Java RPG, Go TUI tools, and whatever I find worth breaking in
 | | |
 |---|---|
 | **QIOS** | Business intelligence SaaS — Go, Next.js, PostgreSQL, Xendit |
-| **EternaFall** | Solo Java RPG, no engine, built from scratch |
+| **ETERNAFALL** | Solo Java RPG, no engine, built from scratch |
 | **Grimoire** | Developer note tool — Go, Bubbletea |
 
 ---
