@@ -1,18 +1,10 @@
 # ⌬ theoneandonlyvabo — Airel Adrivano
 
-Founder & developer. Co-founded **[Skalar Solutions](https://skalar.id)** — building **QIOS**, a business intelligence & POS platform for Indonesian SMEs.
+Founder & backend developer. Co-founded **[Skalar Solutions](https://skalar.id)** — building **Klay**, a POS and business intelligence platform for Indonesian SMEs.
 
-I lead product and backend architecture at Skalar: Go/Echo, PostgreSQL, JWT auth, Next.js, full in-house transaction management. On the org side, I hold the line between product vision and execution with a four-person founding board and a cross-functional team.
+I lead product and backend architecture: Go/Echo, PostgreSQL, JWT auth, with in-house transaction management built from scratch. The frontend is a Vite + React monorepo — an owner-side BI dashboard and an operator-side PWA for cashiers. On the org side I work with a four-person founding board to keep product and execution aligned.
 
-Outside Skalar, I build things that interest me — from full-stack web apps to a solo Java RPG written from scratch without a game engine.
-
----
-
-## 🔎 Current Focus
-
-- **QIOS** — backend development (transaction domain, kasir flow, analytics endpoints)
-- **Skalar** — company operations, sprint planning, team structure, early-stage growth
-- **Personal projects** — EternaFall (Java RPG), Grimoire (Go TUI), portfolio site
+Outside Skalar I build whatever holds my attention — full-stack web apps, a Go TUI, and a solo 2D RPG in plain Java.
 
 ---
 
@@ -26,7 +18,7 @@ Outside Skalar, I build things that interest me — from full-stack web apps to 
 
 ## 🛠️ Tech Stack
 
-<img src="https://skillicons.dev/icons?i=go,ts,java,next,react,laravel,python,postgres,mysql,docker,git,github" />
+<img src="https://skillicons.dev/icons?i=go,ts,java,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
 ---
 
