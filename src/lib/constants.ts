@@ -24,7 +24,6 @@ export const PROJECTS: Project[] = [
       { name: "Go 1.26.2", icon: "/icons/golang.png", alt: "Backend Framework" },
       { name: "PostgreSQL 18.3", icon: "/icons/postgresql.png", alt: "Database" },
       { name: "OpenRouter", icon: "/icons/openrouter.png", alt: "AI API" },
-      { name: "DeepSeek V4 Flash", icon: "/icons/deepseek.png", alt: "AI Model" },
       { name: "Biznet GioCloud", icon: "/icons/biznetgiocloud.png", alt: "Cloud Provider" }
     ],
     links: [
