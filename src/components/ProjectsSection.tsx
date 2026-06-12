@@ -6,7 +6,7 @@ import { PROJECTS } from '@/lib/constants'
 
 const PixelBlast = dynamic(() => import('./PixelBlast'), { ssr: false })
 
-const FEATURED = ['qios', 'eternafall', 'grimoire']
+const FEATURED = ['klay', 'eternafall', 'grimoire']
 
 // Status indicator mapping
 const STATUS_MAP: Record<string, { label: string; color: string }> = {
