@@ -11,15 +11,16 @@ export const BIO = {
 
 export const PROJECTS: Project[] = [
   {
-    id: "qios",
-    title: "QIOS",
+    id: "klay",
+    title: "Klay",
     description:
       "One dashboard for payments, inventory, and AI insights. Eliminates spreadsheet chaos and tool fragmentation for Indonesian SMEs. Cuts operational overhead by 60%.",
     why:
       "Solving real SME problems with full-stack execution. From discovery and architecture to deployment and business impact.",
-    tags: ["SaaS", "SCM", "Business Intelligence"],
+    tags: ["SaaS", "Transaction Management", "Business Intelligence"],
     techStack: [
-      { name: "Next.js 16.2", icon: "/icons/nextjs.png", alt: "Frontend Framework" },
+      { name: "React 19.2.7", icon: "/icons/react.png", alt: "Frontend Framework" },
+      { name: "Vite 8.0.16", icon: "/icons/vite.png", alt: "Build Tool" },
       { name: "Go 1.26.2", icon: "/icons/golang.png", alt: "Backend Framework" },
       { name: "PostgreSQL 18.3", icon: "/icons/postgresql.png", alt: "Database" },
       { name: "OpenRouter", icon: "/icons/openrouter.png", alt: "AI API" },
@@ -27,10 +28,10 @@ export const PROJECTS: Project[] = [
       { name: "Biznet GioCloud", icon: "/icons/biznetgiocloud.png", alt: "Cloud Provider" }
     ],
     links: [
-      { label: "GitHub", url: "https://github.com/theoneandonlyvabo/qios-web" },
+      { label: "GitHub", url: "https://github.com/theoneandonlyvabo" },
     ],
     image: "/screenshots/qios-ss-1.jpeg",
-    role: "Product Lead / Full-Stack",
+    role: "Product Manager / Full-Stack",
     year: "2025",
     status: "in-development",
     featured: true,

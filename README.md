@@ -1,8 +1,6 @@
 # ⌬ theoneandonlyvabo — Airel Adrivano
 
-Founder & backend developer. Co-founded **[Skalar Solutions](https://skalar.id)** — building **Klay**, a POS and business intelligence platform for Indonesian SMEs.
-
-I lead product and backend architecture: Go/Echo, PostgreSQL, JWT auth, with in-house transaction management built from scratch. The frontend is a Vite + React monorepo — an owner-side BI dashboard and an operator-side PWA for cashiers. On the org side I work with a four-person founding board to keep product and execution aligned.
+I lead product and backend architecture: Go, PostgreSQL, JWT auth, with in-house transaction management built from scratch. The frontend is a Vite + React — an owner-side BI dashboard and an operator-side PWA for cashiers. On the org side I work with a four-person founding board to keep product and execution aligned.
 
 Outside Skalar I build whatever holds my attention — full-stack web apps, a Go TUI, and a solo 2D RPG in plain Java.
 
