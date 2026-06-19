@@ -14,8 +14,6 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 <div align="center">
 
-### 🛠 Skills.md
-
 ![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&logoColor=white)
 ![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&logoColor=white)
 ![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
@@ -33,8 +31,6 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 ---
 
 <div align="center">
-
-### 🌐 Find Me
 
 [![Website](https://img.shields.io/badge/Website-aireladrivano.vercel.app-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://aireladrivano.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aireladrivano)
