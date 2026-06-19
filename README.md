@@ -12,11 +12,24 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 ---
 
+## 🧩 What I Do
+
+I work end-to-end across a product, with the center of gravity in **backend and business logic**. That's where I'm strongest — modeling the domain, the data flow, and the rules a system actually runs on. The rest of the stack I handle well enough to ship a full product solo.
+
+- **Backend** — Go and Java. Where I'm sharpest: turning messy business requirements into clean domain logic, transaction flows, and APIs that hold up.
+- **Web (fullstack)** — comfortable end-to-end, frontend included (React + Vite). FE is solid for web; backend is where I lead.
+- **Mobile** — PWA and native mobile when the product calls for it.
+- **Databases** — PostgreSQL as the default, plus Firebase and Supabase depending on the build.
+
+Short version: I can take a product from data model to deployed UI on my own, and the backend layer is the part I'd put my name on first.
+
+---
+
 <div align="center">
 
 ### 🛠 Stack
 
-<img src="https://skillicons.dev/icons?i=go,ts,java,react,vite,laravel,python,postgres,mysql,docker,git,github" />
+<img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,firebase,supabase,docker,git,github" />
 
 </div>
 
