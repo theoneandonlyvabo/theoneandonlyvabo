@@ -25,6 +25,8 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 
 <sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
 
+<br>
+
 <img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
 </div>
