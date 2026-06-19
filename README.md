@@ -4,8 +4,6 @@ I build backend systems and lead product architecture. Co-founder at Skalar Solu
 
 ---
 
-## 🛠️ Tech Stack
-
 <img src="https://skillicons.dev/icons?i=go,ts,java,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
 ---
