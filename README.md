@@ -4,7 +4,7 @@
 
 **`theoneandonlyvabo`**
 
-Backend systems & product architecture. Co-founder @ **Skalar Solutions** — POS & BI tooling for Indonesian SMEs.
+Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Solutions**
 
 *Off-clock: dev tools, a Go TUI, and a solo 2D RPG in plain Java.*
 
