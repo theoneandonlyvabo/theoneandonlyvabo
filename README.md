@@ -12,6 +12,8 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 ---
 
+<br>
+
 <div align="center">
 
 ![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&logoColor=white)
@@ -27,6 +29,8 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 <img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
 </div>
+
+<br>
 
 ---
 
