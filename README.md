@@ -21,7 +21,6 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 ![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
 
 ![Backend](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&logoColor=white)
-![Frontend](https://img.shields.io/badge/Frontend_Development-EC4899?style=for-the-badge&logoColor=white)
 ![Business Development](https://img.shields.io/badge/Fullstack_Web_Development-D97706?style=for-the-badge&logoColor=white)
 
 <sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
