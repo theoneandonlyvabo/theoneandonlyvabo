@@ -16,13 +16,13 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 ### 🧩 What I Do
 
-![Product Management](https://img.shields.io/badge/Product_Management-207886?style=for-the-badge&logoColor=white)
-![System Architecture](https://img.shields.io/badge/System_Architecture-207886?style=for-the-badge&logoColor=white)
-![Project Management](https://img.shields.io/badge/Project_Management-207886?style=for-the-badge&logoColor=white)
+![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&logoColor=white)
+![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&logoColor=white)
+![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
 
-![Backend](https://img.shields.io/badge/Backend_Development-0F3B42?style=for-the-badge&logoColor=white)
-![Frontend](https://img.shields.io/badge/Frontend_Development-2F2F2F?style=for-the-badge&logoColor=white)
-![Business Development](https://img.shields.io/badge/Business_Development-2F2F2F?style=for-the-badge&logoColor=white)
+![Backend](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend_Development-EC4899?style=for-the-badge&logoColor=white)
+![Business Development](https://img.shields.io/badge/Business_Development-D97706?style=for-the-badge&logoColor=white)
 
 <sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
 
@@ -54,6 +54,6 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 <div align="center">
 
-<sub>Build-first. Backend, branding, legal, design — switch fast, ship clean.</sub>
+**Think fast · Adapt fast · Pivot fast · Ship fast**
 
 </div>
