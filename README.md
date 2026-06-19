@@ -1,14 +1,14 @@
 # ⌬ theoneandonlyvabo — Airel Adrivano
 
-I build backend systems and lead product architecture. Co-founder at Skalar Solutions, where we ship POS and BI tooling for Indonesian SMEs. Outside work: dev tools, a Go TUI, and a solo 2D RPG in plain Java.
+I build backend systems and lead product architecture. Co-founder at Skalar Solutions, where we ship POS and BI tooling for Indonesian SMEs. Outside work: dev tools, a Go TUI, and a solo 2D RPG in plain Java.
 
----
+
 
 ## 🛠️ Tech Stack
 
 <img src="https://skillicons.dev/icons?i=go,ts,java,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
----
+
 
 ## 🌐 Find Me
 
