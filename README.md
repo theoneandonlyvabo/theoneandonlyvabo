@@ -16,22 +16,27 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 ### 🧩 End-to-end builder, backend-first
 
-| | |
-|---|---|
-| **Backend** *(lead)* | `Go` · `Java` — domain logic, transaction flows, APIs |
-| **Web** *(fullstack)* | `React` · `Vite` · `TypeScript` |
-| **Mobile** | `PWA` · `Native` |
-| **Databases** | `PostgreSQL` · `Firebase` · `Supabase` |
+**Backend** *(lead)*
+&nbsp;
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
-</div>
+**Web** *(fullstack)*
+&nbsp;
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
----
+**Mobile**
+&nbsp;
+![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
+![Native](https://img.shields.io/badge/Native-02569B?style=for-the-badge&logo=android&logoColor=white)
 
-<div align="center">
-
-### 🛠 Stack
-
-<img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,firebase,supabase,docker,git,github" />
+**Databases**
+&nbsp;
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 </div>
 
