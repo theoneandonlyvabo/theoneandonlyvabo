@@ -14,6 +14,8 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 <div align="center">
 
+### 🛠 Skills.md
+
 ![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&logoColor=white)
 ![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&logoColor=white)
 ![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
@@ -23,14 +25,6 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 ![Business Development](https://img.shields.io/badge/Fullstack_Web_Development-D97706?style=for-the-badge&logoColor=white)
 
 <sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
-
-</div>
-
----
-
-<div align="center">
-
-### 🛠 Stack
 
 <img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
