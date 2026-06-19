@@ -14,15 +14,13 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 <div align="center">
 
-### 🧩 What I Do
-
 ![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&logoColor=white)
 ![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&logoColor=white)
 ![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
 
 ![Backend](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&logoColor=white)
 ![Frontend](https://img.shields.io/badge/Frontend_Development-EC4899?style=for-the-badge&logoColor=white)
-![Business Development](https://img.shields.io/badge/Business_Development-D97706?style=for-the-badge&logoColor=white)
+![Business Development](https://img.shields.io/badge/Fullstack Web Development-D97706?style=for-the-badge&logoColor=white)
 
 <sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
 
@@ -34,7 +32,7 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 ### 🛠 Stack
 
-<img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,firebase,supabase,docker,git,github" />
+<img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,docker,git,github" />
 
 </div>
 
