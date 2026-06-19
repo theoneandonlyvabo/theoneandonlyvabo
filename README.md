@@ -14,29 +14,27 @@ Backend systems & product architecture. Co-founder @ **Skalar Solutions** — PO
 
 <div align="center">
 
-### 🧩 End-to-end builder, backend-first
+### 🧩 What I Do
 
-**Backend** *(lead)*
-&nbsp;
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Product Management](https://img.shields.io/badge/Product_Management-207886?style=for-the-badge&logoColor=white)
+![System Architecture](https://img.shields.io/badge/System_Architecture-207886?style=for-the-badge&logoColor=white)
+![Project Management](https://img.shields.io/badge/Project_Management-207886?style=for-the-badge&logoColor=white)
 
-**Web** *(fullstack)*
-&nbsp;
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Backend](https://img.shields.io/badge/Backend_Development-0F3B42?style=for-the-badge&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend_Development-2F2F2F?style=for-the-badge&logoColor=white)
+![Business Development](https://img.shields.io/badge/Business_Development-2F2F2F?style=for-the-badge&logoColor=white)
 
-**Mobile**
-&nbsp;
-![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
-![Native](https://img.shields.io/badge/Native-02569B?style=for-the-badge&logo=android&logoColor=white)
+<sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
 
-**Databases**
-&nbsp;
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+</div>
+
+---
+
+<div align="center">
+
+### 🛠 Stack
+
+<img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,firebase,supabase,docker,git,github" />
 
 </div>
 
