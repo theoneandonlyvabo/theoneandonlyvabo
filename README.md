@@ -42,11 +42,3 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/aireladrivano)
 
 </div>
-
----
-
-<div align="center">
-
-**Think fast · Adapt fast · Pivot fast · Ship fast**
-
-</div>
