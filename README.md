@@ -20,14 +20,14 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 ![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&logoColor=white)
 ![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
 
-![Backend](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&logoColor=white)
-![Business Development](https://img.shields.io/badge/Fullstack_Web_Development-D97706?style=for-the-badge&logoColor=white)
+![Backend Development](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&logoColor=white)
+![Fullstack Web Development](https://img.shields.io/badge/Fullstack_Web_Development-D97706?style=for-the-badge&logoColor=white)
 
 <sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=go,java,ts,react,vite,laravel,python,postgres,mysql,docker,git,github" />
+<img src="https://skillicons.dev/icons?i=go,java,spring,python,ts,react,vite,postgres,mysql,docker" />
 
 </div>
 
