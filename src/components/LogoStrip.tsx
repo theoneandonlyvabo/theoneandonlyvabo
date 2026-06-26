@@ -47,24 +47,23 @@ export default function LogoStrip() {
 
   return (
     <div
-      style={{
-        overflow: 'hidden',
-        width: '100%',
-        padding: 'var(--space-md) 0',
-        borderTop: '1px solid var(--line)',
-        borderBottom: '1px solid var(--line)',
-      }}
-      onMouseEnter={() => { isHovered.current = true }}
-      onMouseLeave={() => { isHovered.current = false }}
-    >
-      <div
+        style={{
+            overflow: 'hidden',
+            width: '100%',
+            padding: 'var(--space-lg) 0',
+            borderTop: '1px solid var(--line)',
+            borderBottom: '1px solid var(--line)',
+        }}
+        onMouseEnter={() => { isHovered.current = true }}
+        onMouseLeave={() => { isHovered.current = false }}
+        >
+    <div
         ref={trackRef}
         style={{
-          display: 'flex',
-          gap: '60px',
-          width: 'max-content',
-        }}
-      >
+            display: 'flex',
+            gap: '60px',
+            width: 'max-content',
+        }}>
         {[...logos, ...logos].map((logo, i) => (
           <span
             key={i}

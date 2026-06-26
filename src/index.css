@@ -17,15 +17,16 @@
   --font-body: 'Krub', sans-serif;
 
   /* Font Size */
-  --text-sm: 14px;
+  --text-sm: 16px;
   --text-md: 20px;
-  --text-lg: 30px;
-  --text-xl: 80px;
+  --text-lg: 36px;
+  --text-xl: 85px;
 
   /* Padding */
-  --space-sm: 10px;
-  --space-md: 30px;
-  --space-lg: 50px;
+  --space-sm: 16px;
+  --space-md: 20px;
+  --space-lg: 36px;
+  --space-xl: 85px;
 
 }
 

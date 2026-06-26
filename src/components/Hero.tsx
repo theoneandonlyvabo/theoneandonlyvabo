@@ -26,23 +26,23 @@ export default function Hero() {
             display: 'flex',
             alignItems: 'center',
             gap: 'var(--space-sm)',
-            marginTop: '100px',
+            marginTop: 'var(--space-xl)',
         }}>
             
         <img
             src="/src/assets/profile.jpeg"
             alt="Vabo"
             style={{
-                marginTop: '54px',
-                width: '65px',
-                height: '65px',
+                marginTop: 'var(--space-xl)',
+                width: '70px',
+                height: '70px',
                 borderRadius: '5px',
                 objectFit: 'cover',
             }}
         />
 
         <h1 style={{
-            marginTop: '54px',
+            marginTop: 'var(--space-xl)',
             fontFamily: 'var(--font-main)',
             fontSize: 'var(--text-xl)',
             fontWeight: '700',
@@ -59,33 +59,34 @@ export default function Hero() {
             style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-md)',
-                color: 'var(--text-muted)',
+                color: 'var(--text)',
                 animation: 'wordIn 0.5s ease forwards',
             }}
         >
             {words[index]}
         </p>
 
-      <div style={{
-        fontFamily: 'var(--font-body)',
-        marginTop: '120px',
-        fontSize: 'var(--text-md)',
-        color: 'var(--text)',
-        animation: 'breathe 4s infinite',
-      }}>
-        Scroll Down ↓
-      </div>
+        <div style={{
+            fontFamily: 'var(--font-body)',
+            marginTop: '120px',
+            fontSize: 'var(--text-sm)',
+            color: 'var(--text)',
+            animation: 'breathe 4s infinite',
+        }}>
+            Scroll Down ↓
+        </div>
 
-      <div style={{
-        fontFamily: 'var(--font-body)',
-        marginTop: '120px',
-        fontSize: 'var(--text-md)',
-        color: 'var(--text)',
-      }}>
-        Architecting products from zero to one. End-to-end
-        <br />
-        execution with a founder's eye for value.
-      </div>
+        <div style={{
+            fontFamily: 'var(--font-body)',
+            marginTop: '120px',
+            fontSize: 'var(--text-md)',
+            color: 'var(--text)',
+            marginBottom: 'var(--space-lg)',
+        }}>
+            Architecting products from zero to one. End-to-end
+            <br/>
+            execution with a founder's eye for value.
+        </div>
 
     </section>
   )
