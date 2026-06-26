@@ -1,64 +1,84 @@
-// src/components/Hero.tsx
+import { useState, useEffect } from 'react'
+
+const words = ['Moonshot Builder', 'System Designer', 'Change Maker', 'Opportunity Taker', "Big-League Chaser"]
 
 export default function Hero() {
-  return (
-    <section style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      textAlign: 'center',
-      padding: 'var(--space-lg) var(--space-md)',
-      gap: '12px',
-    }}>
+    const [index, setIndex] = useState(0)
 
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: 'var(--space-sm)',
-        marginTop: '100px',
-      }}>
-        <img
-          src="/src/assets/aireladrivano.jpeg"
-          alt="aireladrivano"
-          style={{
-            width: '65px',
-            height: '65px',
-            borderRadius: '5px',
-            objectFit: 'cover',
-          }}
-        />
-        <h1 style={{
-          fontFamily: 'var(--font-main)',
-          fontSize: 'var(--text-xl)',
-          fontWeight: '700',
-          letterSpacing: '-0.05em',
-          color: 'var(--text)',
+    useEffect(() => {
+        const interval = setInterval(() => {
+        setIndex(prev => (prev + 1) % words.length)
+        }, 2000)
+        return () => clearInterval(interval)
+    }, [])
+
+    return (
+        <section style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+            padding: 'var(--space-lg) var(--space-md)',
+            gap: '10px',
         }}>
-          aireladrivano
-        </h1>
-      </div>
 
-      <p style={{
-        fontFamily: 'var(--font-body)',
-        fontSize: 'var(--text-lg)',
-        color: 'var(--text-muted)',
-      }}>
-        Innovator
-      </p>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 'var(--space-sm)',
+            marginTop: '100px',
+        }}>
+            
+        <img
+            src="/src/assets/profile.jpeg"
+            alt="Vabo"
+            style={{
+                marginTop: '54px',
+                width: '65px',
+                height: '65px',
+                borderRadius: '5px',
+                objectFit: 'cover',
+            }}
+        />
+
+        <h1 style={{
+            marginTop: '54px',
+            fontFamily: 'var(--font-main)',
+            fontSize: 'var(--text-xl)',
+            fontWeight: '700',
+            letterSpacing: '-0.05em',
+            color: 'var(--text)',
+        }}>
+            aireladrivano
+        </h1>
+
+        </div>
+
+        <p
+            key={words[index]}
+            style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: 'var(--text-md)',
+                color: 'var(--text-muted)',
+                animation: 'wordIn 0.5s ease forwards',
+            }}
+        >
+            {words[index]}
+        </p>
 
       <div style={{
         fontFamily: 'var(--font-body)',
-        marginTop: '100px',
+        marginTop: '120px',
         fontSize: 'var(--text-md)',
         color: 'var(--text)',
-        animation: 'breathe 2s ease-in-out infinite',
+        animation: 'breathe 4s infinite',
       }}>
         Scroll Down ↓
       </div>
 
       <div style={{
         fontFamily: 'var(--font-body)',
-        marginTop: '100px',
+        marginTop: '120px',
         fontSize: 'var(--text-md)',
         color: 'var(--text)',
       }}>
