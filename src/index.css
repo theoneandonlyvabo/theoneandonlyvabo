@@ -11,9 +11,21 @@
   --dim: #D9D9D9;
   --line: #CDCDCD;
   --text: #252525;
+  --accent: #0066FF;
 
   --font-main: 'Inter', sans-serif;
-  --font-alt: 'Krub', sans-serif;
+  --font-body: 'Krub', sans-serif;
+
+  /* Font Size */
+  --text-sm: 14px;
+  --text-md: 20px;
+  --text-lg: 30px;
+  --text-xl: 80px;
+
+  /* Padding */
+  --space-sm: 10px;
+  --space-md: 30px;
+  --space-lg: 50px;
 
 }
 
@@ -21,6 +33,16 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-main);
+  letter-spacing: var(--tracking-tight);
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
 }
