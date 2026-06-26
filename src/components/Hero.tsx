@@ -17,6 +17,7 @@ export default function Hero() {
             fontFamily: 'var(--font-main)',
             fontSize: 'var(--text-xl)',
             fontWeight: '700',
+            marginTop: '100px',
             letterSpacing: '-0.05em',
             color: 'var(--text)',
         }}>
@@ -36,8 +37,22 @@ export default function Hero() {
             marginTop: '100px',
             fontSize: 'var(--text-md)',
             color: 'var(--text)',
+            animation: 'breathe 2s ease-in-out infinite',
+
         }}>
             Scroll Down ↓
+        </div>
+
+        <div style={{
+            fontFamily: 'var(--font-body)',
+            marginTop: '100px',
+            fontSize: 'var(--text-md)',
+            color: 'var(--text)',
+
+        }}>
+            Architecting products from zero to one. End-to-end
+            <br></br>
+            execution with a founder's eye for value.
         </div>
 
     </section>
