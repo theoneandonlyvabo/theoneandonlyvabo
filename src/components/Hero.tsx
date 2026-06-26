@@ -1,7 +1,9 @@
 // src/components/Hero.tsx
 
 export default function Hero() {
+
   return (
+
     <section style={{
       display: 'flex',
       flexDirection: 'column',
@@ -11,31 +13,32 @@ export default function Hero() {
       gap: '12px',
     }}>
 
-      <h1 style={{
-        fontFamily: 'var(--font-main)',
-        fontSize: 'var(--text-xl)',
-        fontWeight: '700',
-        letterSpacing: '-0.05em',
-        color: 'var(--text)',
-      }}>
-        aireladrivano
-      </h1>
+        <h1 style={{
+            fontFamily: 'var(--font-main)',
+            fontSize: 'var(--text-xl)',
+            fontWeight: '700',
+            letterSpacing: '-0.05em',
+            color: 'var(--text)',
+        }}>
+            aireladrivano
+        </h1>
 
-      <p style={{
-        fontFamily: 'var(--font-body)',
-        fontSize: 'var(--text-sm)',
-        color: 'var(--text-muted)',
-      }}>
-        Innovator
-      </p>
+        <p style={{
+            fontFamily: 'var(--font-body)',
+            fontSize: 'var(--text-lg)',
+            color: 'var(--text-muted)',
+        }}>
+            Innovator
+        </p>
 
-      <div style={{
-        marginTop: 'var(--space-lg)',
-        fontSize: 'var(--text-sm)',
-        color: 'var(--text-muted)',
-      }}>
-        Scroll Down ↓
-      </div>
+        <div style={{
+            fontFamily: 'var(--font-body)',
+            marginTop: '100px',
+            fontSize: 'var(--text-md)',
+            color: 'var(--text)',
+        }}>
+            Scroll Down ↓
+        </div>
 
     </section>
   )

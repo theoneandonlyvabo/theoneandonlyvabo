@@ -16,7 +16,7 @@ export default function Navbar() {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a href="https://skalarsolutions.com" target="_blank">Skalar</a>    
+        <a href="https://skalarsolutions.com" target="_blank">My Startup</a>    
     </nav>
   )
 }
