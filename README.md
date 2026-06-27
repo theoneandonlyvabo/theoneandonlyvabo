@@ -29,7 +29,11 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 
 <img src="https://skillicons.dev/icons?i=next,react,vite" />
 
+<br>
+
 <img src="https://skillicons.dev/icons?i=go,python,java,spring,nodejs,kotlin" />
+
+<br>
 
 <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker" />
 
