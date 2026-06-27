@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { heroWords, heroTagline } from '../constants'
+import { heroName, heroProfile, heroWords, heroTagline } from '../constants'
 
 export default function Hero() {
     const [index, setIndex] = useState(0)
@@ -29,8 +29,8 @@ export default function Hero() {
         }}>
             
         <img
-            src="/src/assets/profile.jpeg"
-            alt="Vabo"
+            src={heroProfile}
+            alt={heroName}
             style={{
                 marginTop: 'var(--space-xl)',
                 width: '70px',
@@ -48,7 +48,7 @@ export default function Hero() {
             letterSpacing: '-0.05em',
             color: 'var(--text)',
         }}>
-            aireladrivano
+            {heroName}
         </h1>
 
         </div>

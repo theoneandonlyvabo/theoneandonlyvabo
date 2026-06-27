@@ -168,6 +168,8 @@ function ProjectCard({ project, isLeft, isTop }: {
       <div style={{
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
       }}>
         <span style={{
           fontFamily: 'var(--font-body)',
@@ -192,7 +194,21 @@ function ProjectCard({ project, isLeft, isTop }: {
         ))}
       </div>
 
-      {images.length > 0 ? (
+      {'video' in project && project.video ? (
+        <video
+          src={project.video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            width: '100%',
+            borderRadius: '10px',
+            display: 'block',
+            filter: 'brightness(1.15)',
+          }}
+        />
+      ) : images.length > 0 ? (
         <PanningSlider images={images} title={project.title} />
       ) : (
         <div style={{
