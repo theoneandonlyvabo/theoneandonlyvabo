@@ -16,7 +16,9 @@ export default function Navbar() {
       fontSize: 'var(--text-sm)',
       color: 'var(--text)',
       borderBottom: '1px solid var(--line)',
-      background: 'var(--bg)',
+      background: 'rgba(245, 245, 240, 0.75)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
     }}>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>

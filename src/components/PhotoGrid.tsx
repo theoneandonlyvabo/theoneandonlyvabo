@@ -5,10 +5,9 @@ export default function PhotoGrid() {
     <div style={{
         display: 'flex',
         gap: 'var(--space-md)',
-        padding: '0 var(--space-md)',
+        padding: '0 var(--space-lg)',
         margin: '0 auto',
-        borderBottom: '1px solid var(--line)',
-        paddingBottom: 'var(--space-md)',
+        paddingBottom: 'var(--space-lg)',
     }}>
         {Array.from({ length: 5 }).map((_, i) => (
         <div

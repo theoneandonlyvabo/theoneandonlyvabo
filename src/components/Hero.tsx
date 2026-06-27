@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
-
-const words = ['Moonshot Builder', 'System Designer', 'Change Maker', 'Opportunity Taker', "Big-League Chaser"]
+import { heroWords, heroTagline } from '../constants'
 
 export default function Hero() {
     const [index, setIndex] = useState(0)
 
     useEffect(() => {
         const interval = setInterval(() => {
-        setIndex(prev => (prev + 1) % words.length)
+        setIndex(prev => (prev + 1) % heroWords.length)
         }, 2000)
         return () => clearInterval(interval)
     }, [])
@@ -55,7 +54,7 @@ export default function Hero() {
         </div>
 
         <p
-            key={words[index]}
+            key={heroWords[index]}
             style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-md)',
@@ -63,7 +62,7 @@ export default function Hero() {
                 animation: 'wordIn 0.5s ease forwards',
             }}
         >
-            {words[index]}
+            {heroWords[index]}
         </p>
 
         <div style={{
@@ -77,15 +76,14 @@ export default function Hero() {
         </div>
 
         <div style={{
-            fontFamily: 'var(--font-body)',
             marginTop: '120px',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-md)',
             color: 'var(--text)',
+            maxWidth: '620px',
             marginBottom: 'var(--space-lg)',
         }}>
-            Architecting products from zero to one. End-to-end
-            <br/>
-            execution with a founder's eye for value.
+            {heroTagline}
         </div>
 
     </section>
