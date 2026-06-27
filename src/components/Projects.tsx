@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { projects } from '../constants'
 
 function getImages(slug: string, count: number): string[] {
-  return Array.from({ length: count }, (_, i) => `/src/assets/projects/${slug}/${i + 1}.png`)
+  return Array.from({ length: count }, (_, i) => `/images/projects/${slug}/${i + 1}.png`)
 }
 
 function PanningSlider({ images, title }: { images: string[], title: string }) {
@@ -181,7 +181,7 @@ function ProjectCard({ project, isLeft, isTop }: {
         {project.stack.map((tech, i) => (
           <img
             key={i}
-            src={`/src/assets/stack/${tech.toLowerCase()}.png`}
+            src={`/images/stack/${tech.toLowerCase()}.png`}
             alt={tech}
             style={{
               height: '25px',

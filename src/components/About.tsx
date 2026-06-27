@@ -44,8 +44,8 @@ export default function About() {
                 }}>
                     Biography written fully by
                 </p>
-                    <img src="/src/assets/stack/chatgpt.png" alt="ChatGPT" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '5px' }} />
-                    <img src="/src/assets/stack/claude.png" alt="Claude" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '10px' }} />
+                    <img src="/images/stack/chatgpt.png" alt="ChatGPT" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '5px' }} />
+                    <img src="/images/stack/claude.png" alt="Claude" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '10px' }} />
                 <p style={{
                     fontFamily: 'var(--font-body)',
                     fontSize: 'var(--text-sm)',

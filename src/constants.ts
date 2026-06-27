@@ -7,7 +7,7 @@ export const projects = [
         description: 'Klay helps Indonesian SMEs replace spreadsheets and fragmented tools with an AI-powered platform. It unifies transactions, operational reporting, and predictive sales forecasting into a single source of truth, powered by Go, Echo, PostgreSQL, Redis, and a Python-based data pipeline built for speed and scalability.',
         role: 'Product Manager & Full-Stack',
         stack: ['React', 'Go', 'Python', 'PostgreSQL', 'Redis'],
-        imageCount: '1',
+        imageCount: 1,
     },
     {
         title: 'ETERNAFALL',
@@ -15,7 +15,7 @@ export const projects = [
         description: 'ETERNAFALL is a dark turn-based RPG built entirely in pure Java, without relying on any game engine or framework. Developed as an engine-first project, it features custom rendering, real-time action systems, and behavior-driven game logic, while exploring the technical foundations behind modern game development.',
         role: 'Solo Indie Game Developer',
         stack: ['Java', 'Swing', 'SQLite'],
-        imageCount: '1',
+        imageCount: 1,
     },
     {
         title: 'Learn-It',
@@ -23,7 +23,7 @@ export const projects = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         role: 'Lead Backend',
         stack: ['JetpackCompose', 'Kotlin', 'Firebase'],
-        imageCount: '1',
+        imageCount: 1,
     },
     {
         title: 'Printdock',
@@ -31,7 +31,7 @@ export const projects = [
         description: 'PrintDock streamlines inventory management for international book distributors with a desktop application built in Java. It centralizes inventory tracking, stock movements, category management, and reporting into a structured system, leveraging Object-Oriented Programming principles for maintainability and scalability.',
         role: 'Lead Backend',
         stack: ['JavaFX', 'Spring', 'MySQL'],
-        imageCount: '1',
+        imageCount: 1,
     },
 ]
 
