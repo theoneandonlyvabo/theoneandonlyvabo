@@ -30,7 +30,7 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" />&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 
-<br><br>
+<br>
 
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />&nbsp;&nbsp;
@@ -39,7 +39,7 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 
-<br><br>
+<br>
 
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />&nbsp;&nbsp;
