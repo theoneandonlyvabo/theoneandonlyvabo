@@ -12,34 +12,42 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 
 ---
 
-<br>
-
 <div align="center">
 
-![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&logoColor=white)
-![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&logoColor=white)
-![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&logoColor=white)
+![Product Management](https://img.shields.io/badge/⬢-Product_Management-0EA5E9?style=for-the-badge&labelColor=0D1117)
+![System Architecture](https://img.shields.io/badge/⬢-System_Architecture-6366F1?style=for-the-badge&labelColor=0D1117)
+![Project Management](https://img.shields.io/badge/⬢-Project_Management-8B5CF6?style=for-the-badge&labelColor=0D1117)
 
-![Backend Development](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&logoColor=white)
-![Fullstack Web Development](https://img.shields.io/badge/Fullstack_Web_Development-D97706?style=for-the-badge&logoColor=white)
+![Backend Development](https://img.shields.io/badge/⬢-Backend_Development-207886?style=for-the-badge&labelColor=0D1117)
+![Fullstack Web Development](https://img.shields.io/badge/⬢-Fullstack_Web_Development-D97706?style=for-the-badge&labelColor=0D1117)
 
-<sub>End-to-end builder. Lead strength in backend &amp; business logic.</sub>
+<sub>End-to-end builder. Lead strength in backend & business logic.</sub>
 
-<br>
+<br><br>
 
-<img src="https://skillicons.dev/icons?i=nextjs,react,vite,ts" />
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 
-<br>
+<br><br>
 
-<img src="https://skillicons.dev/icons?i=go,java,spring,kotlin,nodejs,python" />
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 
-<br>
+<br><br>
 
-<img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker,linux" />
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
 
 </div>
-
-<br>
 
 ---
 
