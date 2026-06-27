@@ -2,6 +2,10 @@
 
 import { projects } from '../constants'
 
+function getImages(slug: string, count: number): string[] {
+  return Array.from({ length: count }, (_, i) => `/src/assets/projects/${slug}/${i + 1}.png`)
+}
+
 export default function Projects() {
     const isOdd = projects.length % 2 !== 0
     const mainProjects = isOdd ? projects.slice(0, -1) : projects
@@ -10,27 +14,26 @@ export default function Projects() {
     return (
         <section style={{
             borderTop: '1px solid var(--line)',
-            borderBottom: '1px solid var(--line)',
         }}>
 
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-        }}>
-            {mainProjects.map((project, i) => (
-                <ProjectCard key={i} project={project} isLeft={i % 2 === 0} isTop />
-            ))}
-        </div>
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+            }}>
+                {mainProjects.map((project, i) => (
+                    <ProjectCard key={i} project={project} isLeft={i % 2 === 0} isTop />
+                ))}
+            </div>
 
         {lastProject && (
             <div style={{
-                borderTop: '1px solid var(--line)',
-                display: 'flex',
-                justifyContent: 'center',
+            borderTop: '1px solid var(--line)',
+            display: 'flex',
+            justifyContent: 'center',
             }}>
-                <div style={{ width: '50%' }}>
-                    <ProjectCard project={lastProject} isLeft />
-                </div>
+            <div style={{ width: '50%' }}>
+                <ProjectCard project={lastProject} isLeft />
+            </div>
             </div>
         )}
 
@@ -43,11 +46,14 @@ function ProjectCard({ project, isLeft, isTop }: {
     isLeft?: boolean
     isTop?: boolean
 }) {
+    const images = getImages(project.slug, parseInt(project.imageCount))
+
     return (
         <div style={{
-            padding: 'var(--space-xl) var(--space-lg)',
+            padding: 'var(--space-xl) var(--space-xl)',
             borderLeft: isLeft ? 'none' : '1px solid var(--line)',
             borderTop: isTop ? 'none' : '1px solid var(--line)',
+            borderBottom: '1px solid var(--line)',
             display: 'flex',
             flexDirection: 'column',
             gap: 'var(--space-xl)',
@@ -60,7 +66,6 @@ function ProjectCard({ project, isLeft, isTop }: {
             fontWeight: '700',
             letterSpacing: '-0.05em',
             color: 'var(--text)',
-            textTransform: 'lowercase',
             textAlign: 'center',
         }}>
             {project.title}
@@ -69,10 +74,9 @@ function ProjectCard({ project, isLeft, isTop }: {
         <p style={{
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-md)',
-            color: 'var(--text-muted)',
-            lineHeight: '1.6',
+            color: 'var(--text)',
             textAlign: 'justify',
-            maxWidth: '620px',
+            lineHeight: '1.8',
         }}>
             {project.description}
         </p>
@@ -80,37 +84,49 @@ function ProjectCard({ project, isLeft, isTop }: {
         <div style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '10px',
         }}>
             <span style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-sm)',
-                color: 'var(--text-muted)',
+                color: 'var(--text)',
+                marginRight: '10px',
             }}>
                 {project.role}
             </span>
 
             {project.stack.map((tech, i) => (
-            <img
-                key={i}
-                src={`/src/assets/stack/${tech.toLowerCase()}.png`}
-                alt={tech}
-                style={{
-                    height: '25px',
-                    width: 'auto',
-                    marginLeft: i === 0 ? '-5px' : '-5px',
-                }}
-            />
+                <img
+                    key={i}
+                    src={`/src/assets/stack/${tech.toLowerCase()}.png`}
+                    alt={tech}
+                    style={{
+                        height: '25px',
+                        width: 'auto',
+                        marginRight: i === project.stack.length - 1 ? '0px' : '5px',
+                    }}
+                />
             ))}
         </div>
 
-        <div style={{
-            width: '100%',
-            maxWidth: '620px',
-            aspectRatio: '16/9',
-            background: 'var(--dim)',
-            borderRadius: '8px',
-        }} />
+        {images.length > 0 ? (
+            <img
+                src={images[0]}
+                alt={project.title}
+                style={{
+                    width: '100%',
+                    aspectRatio: '16/9',
+                    objectFit: 'cover',
+                    borderRadius: '10px',
+                }}
+            />
+        ) : (
+            <div style={{
+                width: '100%',
+                aspectRatio: '16/9',
+                background: 'var(--dim)',
+                borderRadius: '10px',
+            }}/>
+        )}
 
     </div>
   )

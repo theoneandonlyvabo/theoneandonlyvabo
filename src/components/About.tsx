@@ -17,7 +17,7 @@ export default function About() {
                 color: 'var(--text)',
                 marginBottom: 'var(--space-xl)',
             }}>
-                who is aireladrivano, really?
+                Who is Airel Adrivano, Really?
             </h2>
 
             <p style={{
@@ -31,7 +31,7 @@ export default function About() {
             }}>
                 {aboutText}
             </p>
-
+            
             <div style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -44,8 +44,8 @@ export default function About() {
                 }}>
                     Biography written fully by
                 </p>
-                <img src="/src/assets/stack/chatgpt.png" alt="ChatGPT" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '5px' }} />
-                <img src="/src/assets/stack/claude.png" alt="Claude" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '10px' }} />
+                    <img src="/src/assets/stack/chatgpt.png" alt="ChatGPT" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '5px' }} />
+                    <img src="/src/assets/stack/claude.png" alt="Claude" style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '10px' }} />
                 <p style={{
                     fontFamily: 'var(--font-body)',
                     fontSize: 'var(--text-sm)',
