@@ -47,6 +47,8 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
 
+<br>
+
 </div>
 
 ---
