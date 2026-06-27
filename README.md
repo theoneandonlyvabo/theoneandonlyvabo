@@ -14,12 +14,12 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 
 <div align="center">
 
-![Product Management](https://img.shields.io/badge/⬢-Product_Management-0EA5E9?style=for-the-badge&labelColor=0D1117)
-![System Architecture](https://img.shields.io/badge/⬢-System_Architecture-6366F1?style=for-the-badge&labelColor=0D1117)
-![Project Management](https://img.shields.io/badge/⬢-Project_Management-8B5CF6?style=for-the-badge&labelColor=0D1117)
+![Product Management](https://img.shields.io/badge/Product_Management-0EA5E9?style=for-the-badge&labelColor=0D1117)
+![System Architecture](https://img.shields.io/badge/System_Architecture-6366F1?style=for-the-badge&labelColor=0D1117)
+![Project Management](https://img.shields.io/badge/Project_Management-8B5CF6?style=for-the-badge&labelColor=0D1117)
 
-![Backend Development](https://img.shields.io/badge/⬢-Backend_Development-207886?style=for-the-badge&labelColor=0D1117)
-![Fullstack Web Development](https://img.shields.io/badge/⬢-Fullstack_Web_Development-D97706?style=for-the-badge&labelColor=0D1117)
+![Backend Development](https://img.shields.io/badge/Backend_Development-207886?style=for-the-badge&labelColor=0D1117)
+![Fullstack Web Development](https://img.shields.io/badge/Fullstack_Web_Development-D97706?style=for-the-badge&labelColor=0D1117)
 
 <sub>End-to-end builder. Lead strength in backend & business logic.</sub>
 
