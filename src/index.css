@@ -76,3 +76,17 @@ a:hover {
 .marquee-wrapper:hover .marquee-track {
   --marquee-speed: 60s;
 }
+
+/* ─── Project Vertical Slider ─── */
+@keyframes slideVertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+.vertical-slider {
+  animation: slideVertical 8s linear infinite;
+}
+
+.vertical-slider:hover {
+  animation-play-state: paused;
+}
