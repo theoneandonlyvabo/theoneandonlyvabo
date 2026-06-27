@@ -27,31 +27,50 @@ Backend systems & product architecture. Co-founder & Tech Lead @ **Skalar Soluti
 
 <br>
 
-<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" />
+<br>
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />&nbsp;&nbsp;
-<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+<br>
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" />
+<br>
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />&nbsp;&nbsp;
-<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+<br>
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bun/bun-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pnpm/pnpm-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/homebrew/homebrew-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" />
 
 <br>
+
+![Bruno](https://img.shields.io/badge/Bruno-F4AA41?style=flat-square&logo=bruno&logoColor=23241F)
+![ngrok](https://img.shields.io/badge/ngrok-1F1E37?style=flat-square&logo=ngrok&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=claude&logoColor=white)
 
 </div>
 
 ---
 
 <div align="center">
-
-
 
 [![Website](https://img.shields.io/badge/Website-Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://skalar.cc/aireladrivano)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aireladrivano)
