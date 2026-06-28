@@ -95,7 +95,7 @@ export default function Projects() {
   const lastProject = isOdd ? projects[projects.length - 1] : null
 
   return (
-    <section style={{
+    <section id="projects" style={{
       borderTop: '1px solid var(--line)',
     }}>
 
@@ -104,7 +104,7 @@ export default function Projects() {
         gridTemplateColumns: '1fr 1fr',
       }}>
         {mainProjects.map((project, i) => (
-          <ProjectCard key={i} project={project} isLeft={i % 2 === 0} isTop />
+          <ProjectCard key={i} project={project} isLeft={i % 2 === 0} isTop={i < 2} />
         ))}
       </div>
 

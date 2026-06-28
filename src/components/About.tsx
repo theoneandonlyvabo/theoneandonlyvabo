@@ -2,7 +2,7 @@ import { aboutText } from '../constants'
 
 export default function About() {
     return (
-        <section style={{
+        <section id="about" style={{
             padding: 'var(--space-xl) var(--space-md)',
             display: 'flex',
             flexDirection: 'column',
